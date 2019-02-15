@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	font-size: 20px;
+}
+
+/*h2 {
+	color: white;
+	margin: 10px 15px;
+}*/
+
+.wrapper {
+	width: 1170px auto;
+	display: flex;
+}
+
+#sidebar {
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	background: black;
+	display: flex;
+	justify-content: center;
+	left: -250px;
+	transition: all 500ms;
+}
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar ul {
+	margin-top: 20px;
+
+}
+
+#sidebar ul li {
+  list-style: none;
+  padding: 20px 5px;
+  margin-left: none;
+}
+
+/*#sidebar li a:after{ 
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 5px;
+	background: white;
+}*/
+
+#sidebar li a:hover {
+	color: #7E6990;
+	text-decoration: none;
+}
+
+#sidebar .toggle-btn {
+	position: absolute;
+	left: 270px;
+	top: 10px;
+	background: white;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 9px 10px;
+}
+
+#sidebar .toggle-btn:hover {background: #7E6990; opacity: 0.5;}
+
+#sidebar .toggle-btn span {
+	display: block;
+	border-radius: 10px;
+	width: 30px;
+	height: 5px;
+	background: black;
+	margin: 5px 0;
+}
+
+#header {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#header .search-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 100%;
+	margin-left: 350px;
+}
+
+#search{
+	display: inline-block;
+	width: 500px;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 0 20px;
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.search-box button {
+  background-color: #7E6990/*#4CAF50*/; /* Green */
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.search-box button:hover {
+	opacity: 0.5;
+}
+
+.logos {
+	margin-top: 10px;
+}
+/*.search-btn {
+ height: 30px;
+ width: 100px;
+ margin-left: 50px
+ background: #25C115;
+ border-radius: 10px;
+}*/
+.logos img:hover {
+	opacity: 0.5;
+}
+
+
